@@ -1,0 +1,32 @@
+@import 'element-plus/theme-chalk/display.css';
+
+html,body{
+  padding: 0;
+  margin: 0;
+  height: 100%;
+}
+
+#app{
+  width: 100%;
+  height: 100%;
+  background-color: #eeeeee;
+}
+
+.el-header{
+  padding: 0!important;
+  background-color: white;
+
+  vertical-align: middle;
+}
+.el-breadcrumb{
+  height: 50px !important;
+  line-height: 50px !important;
+}
+.el-container{
+  height: 100%;
+}
+.el-aside {
+  /*height: 100%;*/
+  background-color: #545c64;
+  height: 100vh;
+}
