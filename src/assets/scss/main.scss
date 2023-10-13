@@ -1,4 +1,4 @@
-@import 'element-plus/theme-chalk/display.css';
+//@import 'element-plus/theme-chalk/index.css';
 
 html,body{
   padding: 0;
@@ -15,7 +15,6 @@ html,body{
 .el-header{
   padding: 0!important;
   background-color: white;
-
   vertical-align: middle;
 }
 .el-breadcrumb{
@@ -27,6 +26,14 @@ html,body{
 }
 .el-aside {
   /*height: 100%;*/
-  background-color: #545c64;
+  background-color: #363636;
   height: 100vh;
+}
+.el-menu--horizontal .el-menu{
+  border-bottom: 0 !important;
+}
+.el-menu--horizontal>.el-menu-item.is-active{
+}
+.el-header{
+  height: auto !important;
 }

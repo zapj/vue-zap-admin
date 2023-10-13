@@ -14,13 +14,13 @@ const closeMenu = ()=>{
 
 <template>
     <el-container>
-      <LeftSidebar ref="leftSidebar" @closeMenu="closeMenu"></LeftSidebar>
+      <LeftSidebar ref="leftSidebar"></LeftSidebar>
       <el-container>
-          <TopMenu></TopMenu>
+          <TopMenu  @closeMenu="closeMenu"></TopMenu>
         <el-main>
           <RouterView></RouterView>
         </el-main>
-        <el-footer>Footer</el-footer>
+        <el-footer>ZAP.CN 2023</el-footer>
       </el-container>
     </el-container>
     <el-backtop :right="10" :bottom="100" />

@@ -1,7 +1,6 @@
 <template>
   <el-header>
     <el-menu
-        :default-active="activeIndex"
         class="el-menu-demo"
         mode="horizontal"
         :ellipsis="false"
@@ -34,14 +33,11 @@
 </template>
 
 <script setup>
-import { ref } from 'vue'
 import {Back} from "@element-plus/icons-vue";
 
-const activeIndex = ref('1')
 const handleSelect = (key, keyPath) => {
   console.log(key, keyPath)
   if(key === "-1"){
-    console.log('emit')
     emit('closeMenu');
   }
 }
