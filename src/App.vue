@@ -1,29 +1,29 @@
 <script setup>
-import LeftSidebar from "@/components/LeftSidebar.vue";
-import TopMenu from "@/components/TopMenu.vue";
-import {ref,onMounted} from "vue";
-onMounted(()=>{
 
-})
-const leftSidebar = ref()
-const closeMenu = ()=>{
-  console.log('closeMenu')
-  leftSidebar.value.closeMenu()
-}
+import Header from "@/components/TopHeader.vue";
+import LeftSidebar from "@/components/LeftSidebar.vue";
+import FooterCopyright from "@/components/FooterCopyright.vue";
 </script>
 
 <template>
+
+
+
     <el-container>
-      <LeftSidebar ref="leftSidebar"></LeftSidebar>
-      <el-container>
-          <TopMenu  @closeMenu="closeMenu"></TopMenu>
-        <el-main>
-          <RouterView></RouterView>
-        </el-main>
-        <el-footer>ZAP.CN 2023</el-footer>
+
+      <LeftSidebar ></LeftSidebar>
+      <el-container direction="vertical">
+        <Header></Header>
+        <el-scrollbar class="zap-content-scroll">
+          <el-main>
+            <RouterView></RouterView>
+          </el-main>
+          <FooterCopyright></FooterCopyright>
+        </el-scrollbar>
+
       </el-container>
+
     </el-container>
-    <el-backtop :right="10" :bottom="100" />
 </template>
 
 <style scoped>

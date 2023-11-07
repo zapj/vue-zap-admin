@@ -1,8 +1,15 @@
 # vue-zap-admin
 
-This template should help get you started developing with Vue 3 in Vite.
+**中文**
 
-## Recommended IDE Setup
+## 介绍
+vue-zap-admin 是一个基于 `element-plus` 免费开源的后台模版。使用了最新的`vue3`，`vite`,`pinia`等主流技术，可作为后台开发模版或学习参考。仅包含关键的布局菜单等常用功能，方便集成。
+
+## 项目主页
+- [vue-zap-admin](https://zap.cn/vue-zap-admin) - ZAP.CN
+- [vue-zap-admin](https://github.com/zapj/vue-zap-admin) - Github
+
+## IDE 推荐
 
 [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
 
@@ -10,19 +17,19 @@ This template should help get you started developing with Vue 3 in Vite.
 
 See [Vite Configuration Reference](https://vitejs.dev/config/).
 
-## Project Setup
+## 如何使用
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### 开发
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### 编译发布
 
 ```sh
 npm run build

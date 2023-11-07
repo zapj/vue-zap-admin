@@ -1,5 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import DashboardView from '../views/DashboardView.vue'
+import NProgress from 'nprogress'
+import 'nprogress/nprogress.css'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -7,17 +8,27 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: DashboardView
+      component: ()=> import('../views/DashboardView.vue')
     },
     {
       path: '/about',
       name: 'about',
-      // route level code-splitting
-      // this generates a separate chunk (About.[hash].js) for this route
-      // which is lazy-loaded when the route is visited.
       component: () => import('../views/AboutView.vue')
+    },
+    {
+      path: '/table',
+      name: 'table',
+      component: () => import('../views/TableView.vue')
     }
   ]
 })
 
 export default router
+router.beforeEach(async () => {
+  NProgress.start()
+})
+
+// 页面加载成功之后，关闭进度条
+router.afterEach(() => {
+  NProgress.done()
+})
