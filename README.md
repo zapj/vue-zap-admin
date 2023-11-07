@@ -40,3 +40,8 @@ npm run build
 ```sh
 npm run lint
 ```
+
+
+## 预览
+
+<img src="screenshot.png"  alt=""/>
